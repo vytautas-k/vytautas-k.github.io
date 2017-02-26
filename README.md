@@ -6,11 +6,11 @@ These are the slides, which I've talked about on various occasions.
 
 ### General
 
-[Code Can Make People Happy](code-can-make-people-happy/index.html)
+[Code Can Make People Happy](https://vytautas-k.github.io/slides/code-can-make-people-happy/)
 
 ### HTTP
 
-[What is Web?](what-is-web/index.html)
+[What is Web?](https://vytautas-k.github.io/slides/what-is-web/)
 
 ## Built With
 
@@ -19,7 +19,7 @@ These are the slides, which I've talked about on various occasions.
 ## History
 
 - 2017-02-26 - "What is Web?" slides were added.
-- 2017-02-21 - "Code Can Make You Happy" slides were added.
+- 2017-02-21 - "Code Can Make People Happy" slides were added.
 
 ## License
 
