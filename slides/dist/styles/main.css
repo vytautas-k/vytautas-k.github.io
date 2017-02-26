@@ -97,12 +97,13 @@ a {
 }
 
 .left-side {
-    width: 50%;
+    width: 49%;
     float: left;
 }
 
 .right-side {
-    width: 50%;
+    margin-left: 2%;
+    width: 49%;
     float: right;
 }
 
