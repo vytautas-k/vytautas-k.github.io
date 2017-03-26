@@ -1,0 +1,32 @@
+.bg-gray {
+    background: #f8f9fa;
+    color: #667189;
+    padding: 1rem;
+}
+
+.section-header {
+    padding: 1rem .5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+.docs-content {
+    color: #667189;
+}
+
+.docs-content header {
+    color: #50596c;
+    padding-top: 6rem;
+}
+
+.docs-content .container {
+    padding: 1rem;
+}
+
+@media screen and (min-width: 601px) {
+    .docs-sidebar {
+        padding: 7rem 1rem 3.5rem 1rem;
+    }
+}
