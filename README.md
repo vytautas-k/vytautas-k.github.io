@@ -22,6 +22,7 @@ These are the slides, which I've talked about on various occasions.
 
 ## History
 
+- 2018-02-25 - "What is Web?" slides were updated with "Solution Stacks" part.
 - 2017-03-20 - "Version Control Systems" slides were added.
 - 2017-02-26 - "What is Web?" slides were added.
 - 2017-02-21 - "Code Can Make People Happy" slides were added.
