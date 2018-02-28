@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>KTU Project 2018</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../dist/styles/main.css">
+</head>
+
+<body>
+  <textarea id="source">
+        name: inverse
+        layout: true
+        class: center, middle, inverse, first
+
+        ---
+        count: false
+        # KTU PROJECT 2018
+        .small[
+          ![](images/logo-white.png)
+        ]
+
+        ---
+        layout: false
+
+        # Project guidelines (1/2)
+
+        * Students needs to create working application by implementing given user stories
+        * Application code should be written using code standards (PSR-1/PSR-2) as much as possible
+        * Use Symfony framework (version 3 or 4) for application implementation
+
+        ---
+        # Project guidelines (2/2)
+
+        * Code should be tested using PHPUnit tests
+        * English language should be used:
+          * to define tasks on Trello task manager
+          * in commit messages, merge requests on GIT
+          * throughout whole code
+
+        ---
+        # Project description
+
+        ### Students should create web application for car service by implementing defined basic user stories.
+
+        ### Project requirements are defined in user stories, which are high-level definitions of a requirement, containing just enough information for developers.
+
+        ### As a first step, given user stories should be split into smaller tasks and added into task management system (Trello).
+
+        ### And only then, after planning stage, students should begin development phase.
+        ---
+        # User stories (1/3)
+
+        ## As a user:
+
+        * I should be able to login into system
+        * I should be able to register
+        * I should be able to change password
+        * I should be able to reset password
+        * I should be able to update my profile
+
+
+        ---
+        # User stories (2/3)
+
+        ## As a user:
+
+        * I should be able to register my car for service
+        * I should be able to select date and time for my visit
+        * I should be able to see price of provided services
+        * I should be able to receive email confirmation when services for my car have been completed
+
+        ---
+        # User stories (3/3)
+
+        ## As an owner:
+
+        * I should be able to review client list
+        * I should be able to deactivate clients
+        * I should be able to create service list
+        * I should be able to see registered cars for service
+        * I should be able to pick what services have been applied from service list
+        * I should be able to mark vehicle as successfully serviced
+
+        ---
+        template: inverse
+
+        # If you have any questions feel free to contact us via email or on Slack
+
+        .white[
+          ### vilija@datadog.lt
+          ### vytautas.k@datadog.org
+        ]
+  </textarea>
+
+  <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+  <script>
+    var slideshow = remark.create();
+  </script>
+</body>
+
+</html>
