@@ -16,12 +16,17 @@ These are the slides, which I've talked about on various occasions.
 
 [Version Control Systems](https://vytautas-k.github.io/slides/version-control-systems/)
 
+### Testing
+
+[Keynote about testing](https://vytautas-k.github.io/slides/about-testing/)
+
 ## Built With
 
 * [Remark](https://github.com/gnab/remark) - The framework for slides
 
 ## History
 
+- 2018-04-24 - "Keynote about testing" slides were added.
 - 2018-02-25 - "What is Web?" slides were updated with "Solution Stacks" part.
 - 2017-03-20 - "Version Control Systems" slides were added.
 - 2017-02-26 - "What is Web?" slides were added.

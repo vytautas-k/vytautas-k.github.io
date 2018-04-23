@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Keynote about testing</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../dist/styles/main.css">
+</head>
+
+<body>
+  <textarea id="source">
+        name: inverse
+        layout: true
+        class: center, middle, inverse, first
+
+        ---
+        count: false
+        # Keynote about testing
+        .small[
+          ![](images/logo-white.png)
+        ]
+
+        ---
+        layout: false
+
+        .left-side[
+          # About me
+          ## Vytautas Kavaliauskas
+          ### graduated in 2011
+          ### web developer (back-end)
+          ### basketball fan
+          ### loves board games
+          ### reads sci-fi books
+        ]
+        .right-side.me.light.center[
+          ![](images/me.png)
+          ### vytautas.k@datadog.org
+          ### https://github.com/vytautas-k
+        ]
+
+        ---
+        template: inverse
+
+        ![](images/gifs/unit-tests-broken.gif)
+
+        ---
+        # Agenda
+
+        * Testing levels
+        * Testing types (techniques or tactics)
+        * Testing practices:
+          * Test-driven development (TDD)
+          * Behaviour-driven development (BDD)
+
+        ---
+        # Testing levels
+
+        ### There are generally four recognized levels of tests:
+
+        * unit testing
+        * integration testing
+        * component interface testing
+        * system testing
+
+        ---
+        # Unit testing
+
+        ### Verifies the functionality of a specific section of code, usually at the function level.
+
+        ### In an object-oriented environment, this is usually at the __class level__, and the minimal unit tests include the constructors and destructors.
+
+        ### Unit testing alone cannot verify the functionality of a piece of software, but rather is used to ensure that the building blocks of the software work independently from each other.
+
+        ### __Defect prevention and detection__ in order to reduce software development risks, time, and costs.
+
+        ---
+        # Integration testing
+
+        ### Seeks to verify the interfaces between components against a software design. Occurs __after unit testing__.
+
+        ### Individual software modules are combined and tested as a group.
+
+        ### Integration testing works to expose defects in the interfaces and interaction between integrated components (modules).
+
+        ---
+        # Component interface testing
+
+        ### Used to check the handling of data passed between various units.
+
+        ### The data being passed can be considered as "message packets" and the range or data types can be checked, for data generated from one unit, and tested for validity before being passed into another unit.
+
+        ---
+        # System testing
+
+        ### System testing __tests a completely integrated system__ to verify that the system meets its requirements.
+
+        ### For example, a system test might involve testing a logon interface, then creating and editing an entry, plus sending or printing results, followed by summary processing or deletion (or archiving) of entries, then logoff.
+
+        ### System testing tests not only the design, but also the behaviour and even the believed expectations of the customer.
+
+        ---
+        template: inverse
+
+        # Testing types (techniques or tactics)
+
+        ![](images/test-in-production.png)
+
+        ---
+        # Testing types (techniques or tactics) / 1
+
+        ### There are lots of different tactics and techniques for testing. Here's few mostly used (by me):
+
+        ## Regression testing
+
+        ### Focuses on finding defects after a major code change has occurred and seeks to uncover software regressions.
+
+        ---
+        # Testing types (techniques or tactics) / 2
+
+        ## Functional testing
+        ### Tests a slice of functionality of the whole system and usually describes what the system does.
+
+        ## Continuous testing
+        ### Process of executing automated tests as part of the software delivery pipeline to obtain immediate feedback on the business risks associated with a software release candidate.
+
+        ???
+        Continuous testing via CI tools: PHPCI, Jenkins, etc.
+        ---
+        template: inverse
+
+        # Testing Practices
+
+        ![](images/gifs/missile-warning.gif)
+
+        ---
+        # Test-driven development (TDD)
+
+        ### It's a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved to pass the new tests, only.
+
+        ### Test-driven development is related to the test-first programming concepts of extreme programming.
+
+        ### Test-driven development [global lifecycle image](https://bit.ly/2Jhcsqf).
+
+        ---
+        # Behaviour-driven development (BDD)
+
+        ## It provides several important things:
+
+        * combines the general techniques and principles of TDD
+        * provides software development and management teams with shared tools
+        * allows teams to collaborate on software development
+        * uses a simple domain-specific language (DSL) via natural language constructs
+
+        ---
+        # BDD example
+
+        ```markdown
+            Story: Returns go to stock
+
+            As a store owner
+            In order to keep track of stock
+            I want to add items back to stock when they're returned.
+
+            Scenario 1: Refunded items should be returned to stock
+            Given that a customer previously bought a black sweater from me
+            And I have three black sweaters in stock.
+            When he returns the black sweater for a refund
+            Then I should have four black sweaters in stock.
+
+            Scenario 2: Replaced items should be returned to stock
+            Given that a customer previously bought a blue garment from me
+            And I have two blue garments in stock
+            And three black garments in stock.
+            When he returns the blue garment for a replacement in black
+            Then I should have three blue garments in stock
+            And two black garments in stock.
+        ```
+        ---
+        template: inverse
+
+        # Questions?
+
+        ---
+        template: inverse
+
+        # Thank you for your attention!
+
+        .white[
+          ### vytautas.k@datadog.org
+          ### https://slides.kavaliauskas.net
+        ]
+  </textarea>
+
+  <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+  <script>
+    var slideshow = remark.create();
+  </script>
+</body>
+
+</html>
